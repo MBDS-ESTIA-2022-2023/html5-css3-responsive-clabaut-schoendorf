@@ -1,0 +1,113 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px 40px auto 60px;
+}
+#container {
+    background-color: #DCDCDC;
+    height: 100%;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header {
+    background-color: #3393FF;
+    color: white;
+    padding : 10px 20px 10px 20px;    
+}
+footer {
+    background-color: #3393FF;
+    color: white;
+    padding : 5px 20px 5px 20px;
+}
+#buttonAds {
+    display: flex;
+    justify-content: space-between;
+}
+input[type="button"] {
+    width: 50%;
+    background-color: #3393FF;
+    padding: 5px;
+    border-style: none;
+    color: white;
+    text-transform: uppercase;
+}
+input[type="button"]:hover {
+    background-color:#3792fb; 
+}
+#titreItem,  #prixItem {
+    font-weight: bolder;
+}
+#titreItem > p, #prixItem > p, #descriptionItem > p, #heureItem > p {
+    margin: 0;
+}
+#ads {
+    margin: 10px;
+    height: 33%;
+    width: 32%;
+    display: flex;
+}
+#imageItem {
+    width: 40%;
+    background-image: url("../fleur.png");
+}
+#information {
+    border-style: none;
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+} 
+
+#informationBis {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: auto;
+}
+#heureItem, #prixItem, #titreItem, #descriptionItem {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 640px){   
+    #container {
+        background-color: #DCDCDC;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }  
+    #ads {
+        margin: 10px;
+        height: 33%;
+        width: auto;
+        display: flex;
+    }
+    #imageItem {
+        width: 40%;  
+        background-repeat: no-repeat;
+        background-image: url("../fleur.png");
+    }
+    #information {
+        border-style: none;
+        background-color: white;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    #informationBis {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        margin-top: auto;
+    }
+}
